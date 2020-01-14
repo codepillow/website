@@ -24,7 +24,7 @@
 				margin: 0;
 				padding: 0;
 				line-height: 1;
-				font-size: 75px;
+				font-size: 3rem;
 				font-weight: 600;
 			}
 			h1 span {
@@ -32,12 +32,20 @@
 				background-color: #ffffff;
 			}
 			h1 a {
-				transition: 0.1s;
+				transition: 0.2s;
 				text-decoration: none;
 				color: inherit
 			}
 			h1 a:hover {
-				font-size: 80px;
+				font-size: 4rem;
+			}
+			h2 a {
+				transition: 0.2s;
+				text-decoration: none;
+				color: inherit
+			}
+			h2 a:hover {
+				font-size: 1.8rem;
 			}
 			.wrapper {
 				height: 100%;
@@ -51,13 +59,22 @@
 				align-items: center;
 				justify-content: center;
 			}
+			.bottom {
+				position: fixed;
+				bottom: 0;
+				text-align: center;
+			}
 		</style>
 	</head>
-	<body>
-		<div class="wrapper">
+	<body class="wrapper">
+		<div>
 			<h1>
 				<a href="mailto:codepillow@pm.me">code<span>(pillow)</span>;</a>
 			</h1>
+		</div>
+
+		<div class="bottom">
+			<h2><a href="team.html">Team</a> | <a href="contact.html">Contact</a> | <a href="location.html">Location</a></h2>
 		</div>
 	</body>
 </html>
