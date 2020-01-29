@@ -94,3 +94,11 @@ i .fa {
 .h-10 {
     height: 10%!important;
 }
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 1%;
+    height: 10%;
+}
