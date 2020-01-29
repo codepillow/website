@@ -94,30 +94,3 @@ i .fa {
 .h-10 {
     height: 10%!important;
 }
-
-.wrapper {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin-left: 1%;
-    height: 10%;
-}
-
-.bottom {
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-}
