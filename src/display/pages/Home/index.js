@@ -5,10 +5,14 @@ import { useSelector, useDispatch } from 'react-redux';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
+import Benefits from "./Benefits";
+
 const Home = () => {
   	return (
 		<div>
-			хоум
+			<Container>
+				<Benefits />
+			</Container>
 		</div>
   	);
 }
@@ -17,4 +21,4 @@ Home.propTypes = {
 
 };
 
-export {Home};
+export { Home };
