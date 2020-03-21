@@ -20,7 +20,7 @@ const Benefits = () => {
 				<Typography variant="h5" align="center" component="h3" gutterBottom>
 					Engineering
 				</Typography>
-				<Typography variant="subtitle1" align="center" component="p">
+				<Typography variant="subtitle2" align="center" component="p">
 					We have a lot of technology in our hands
 				</Typography>
 			</Grid>
@@ -32,7 +32,7 @@ const Benefits = () => {
 				<Typography variant="h5" align="center" component="h3" gutterBottom>
 					Usability
 				</Typography>
-				<Typography variant="subtitle1" align="center" component="p">
+				<Typography variant="subtitle2" align="center" component="p">
 					It's important to us that the interface doesn't worry the user
 				</Typography>
 			</Grid>
@@ -44,7 +44,7 @@ const Benefits = () => {
 				<Typography variant="h5" align="center" component="h3" gutterBottom>
 				  	Solid Design
 				</Typography>
-				<Typography variant="subtitle1" align="center" component="p">
+				<Typography variant="subtitle2" align="center" component="p">
 				 	Our design doesn't get out of date in a week
 				</Typography>
 			</Grid>
