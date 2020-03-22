@@ -10,7 +10,7 @@ const Technologies = () => {
 				<Typography variant="h3" align="center" component="h2" gutterBottom>
 					Technologies that we use
 				</Typography>
-                <Typography variant="subtitle1" align="center" component="p" gutterBottom>
+                <Typography variant="subtitle1" align="center" component="p" style={{width: "75%"}} gutterBottom>
                     We work with companies that need a reliable partner in software development field. We dive into their business process and help them create the best solutions.
                 </Typography>
 			</Grid>

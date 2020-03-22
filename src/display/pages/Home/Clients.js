@@ -10,7 +10,7 @@ const Clients = () => {
 				<Typography variant="h3" align="center" component="h2" gutterBottom>
 					Clients we work with
 				</Typography>
-                <Typography variant="subtitle1" align="center" component="p" gutterBottom>
+                <Typography variant="subtitle1" align="center" style={{width: "75%"}} component="p" gutterBottom>
                     We work with companies that need a reliable partner in software development field. We dive into their business process to provide them the best solutions.
                 </Typography>
 			</Grid>

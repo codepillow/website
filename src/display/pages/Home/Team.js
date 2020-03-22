@@ -11,7 +11,7 @@ const Team = () => {
 				<Typography variant="h3" align="center" component="h2" gutterBottom>
                     Our team
 				</Typography>
-                <Typography variant="subtitle1" align="center" component="p" gutterBottom>
+                <Typography variant="subtitle1" align="center" component="p" style={{width: "75%"}} gutterBottom>
                     We work with companies that need a reliable partner in software engineering. We dive into all business process to provide the best solutions for our customers.
                 </Typography>
 			</Grid>
