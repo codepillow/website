@@ -5,15 +5,15 @@ import { useSelector, useDispatch } from 'react-redux';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
+import Header from "./Header";
 import Benefits from "./Benefits";
 
 const Home = () => {
   	return (
-		<div>
-			<Container>
-				<Benefits />
-			</Container>
-		</div>
+		<Container>
+			<Header />
+			<Benefits />
+		</Container>
   	);
 }
 
