@@ -16,7 +16,7 @@ const Header = () => {
 					We turn you ideas into beautiful products
 				</Typography>
 				<Typography variant="subtitle1" component="p" gutterBottom>
-					Identity for a young digital product developer
+					CodePillow is a software engineer & consulting company.
 				</Typography>
 				<Button variant="contained" color="primary" disableElevation>
 					Start out
