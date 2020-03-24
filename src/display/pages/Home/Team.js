@@ -2,7 +2,9 @@ import React from "react";
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
-import CodeIcon from '@material-ui/icons/Code';
+import volbil from '../../../data/volbil.svg';
+import olexb from '../../../data/olexb.svg';
+import olexh from '../../../data/olexh.svg';
 
 const Team = () => {
 	return (
@@ -16,7 +18,7 @@ const Team = () => {
                 </Typography>
 			</Grid>
             <Grid item xs={12} md={4}>
-				<CodeIcon color="primary" fontSize="large" />
+				<img src={volbil} height="200"/>
 				<Typography variant="h5" align="center" component="h3" gutterBottom>
                     Volodymyr Biloshytskyi
 				</Typography>
@@ -25,7 +27,7 @@ const Team = () => {
 				</Typography>
 			</Grid>
             <Grid item xs={12} md={4}>
-				<CodeIcon color="primary" fontSize="large" />
+				<img src={olexb} height="200"/>
 				<Typography variant="h5" align="center" component="h3" gutterBottom>
 					Oleh Basystiuk
 				</Typography>
@@ -34,7 +36,7 @@ const Team = () => {
 				</Typography>
 			</Grid>
             <Grid item xs={12} md={4}>
-				<CodeIcon color="primary" fontSize="large" />
+				<img src={olexh} height="200"/>
 				<Typography variant="h5" align="center" component="h3" gutterBottom>
 					Oleh Nykoliak
 				</Typography>
