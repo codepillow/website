@@ -18,6 +18,7 @@ const Home = () => {
 			<Header />
 			<Benefits />
 			<Clients />
+			<Technologies />
 			<Fields />
 			<Team />
 		</Container>
