@@ -6,6 +6,10 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#5D4FFF',
+      transparent: {
+        light: "rgba(150, 141, 255, 0.2)",
+        dark: "rgba(150, 141, 255, 0.3)"
+      },
     },
     error: {
       main: red.A400,

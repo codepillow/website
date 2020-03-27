@@ -9,6 +9,7 @@ import Header from "./Header";
 import Benefits from "./Benefits";
 import Clients from "./Clients";
 import Technologies from "./Technologies";
+import Fields from "./Fields";
 import Team from "./Team";
 
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
 			<Header />
 			<Benefits />
 			<Clients />
-			<Technologies />
+			<Fields />
 			<Team />
 		</Container>
   	);
