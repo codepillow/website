@@ -17,12 +17,12 @@ const Benefits = () => {
 				</Typography>
 			</Grid>
 			<Grid item md={2} sm={4} xs={12}>
-				<CodeIcon color="primary" fontSize="large" />
+				<BrushIcon color="primary" fontSize="large" />
 				<Typography variant="h5" align="center" component="h3" gutterBottom>
-					Engineering
+				  	Solid Design
 				</Typography>
 				<Typography variant="subtitle2" align="center" component="p">
-					We have a lot of technology in our hands
+				 	Our design doesn't get out of date in a week
 				</Typography>
 			</Grid>
 			<Hidden smDown>
@@ -45,12 +45,12 @@ const Benefits = () => {
 				</Grid>
 			</Hidden>
 			<Grid item md={2} sm={4} xs={12}>
-				<BrushIcon color="primary" fontSize="large" />
+				<CodeIcon color="primary" fontSize="large" />
 				<Typography variant="h5" align="center" component="h3" gutterBottom>
-				  	Solid Design
+					Engineering
 				</Typography>
 				<Typography variant="subtitle2" align="center" component="p">
-				 	Our design doesn't get out of date in a week
+					We have a lot of technology in our hands
 				</Typography>
 			</Grid>
 		</Grid>
