@@ -30,7 +30,7 @@ const FieldButton = withStyles(theme => ({
 
 const Fields = () => {
 	const defaultFields = [
-		{ 
+		{
 			button: "Mobile",
 			header: "Mobile applications",
 			description: "We have huge experience in mobile applications development. To see our stages of development and best case studies click here.",
@@ -40,9 +40,9 @@ const Fields = () => {
 				description: "Above all, we are engineers, and our mission is to find the most elegant and economical solutions to"
 			}
 		},
-		{ 
-			button: "Front-end",
-			header: "Front-end development",
+		{
+			button: "Web",
+			header: "Frontend & Backend development",
 			description: "We have huge experience in mobile applications development. To see our stages of development and best case studies click here.",
 			project: {
 				poster: "https://www.free-mockup.com/wp-content/uploads/edd/2020/02/isometric-surface-laptop-3-free-mockup-1000x750.jpg",
@@ -50,22 +50,22 @@ const Fields = () => {
 				description: "Above all, we are engineers, and our mission is to find the most elegant and economical solutions to"
 			}
 		},
-		{ 
-			button: "Back-end",
-			header: "Back-end development",
-			description: "We have huge experience in mobile applications development. To see our stages of development and best case studies click here.",
-			project: {
-				poster: "https://www.free-mockup.com/wp-content/uploads/edd/2020/02/macbook-pro-workspace-mockup-1000x750.jpg",
-				title: "Project",
-				description: "Above all, we are engineers, and our mission is to find the most elegant and economical solutions to"
-			}
-		},
-		{ 
+		{
 			button: "Blockchain",
 			header: "Blockchain",
 			description: "We have huge experience in mobile applications development. To see our stages of development and best case studies click here.",
 			project: {
 				poster: "https://www.free-mockup.com/wp-content/uploads/edd/2020/02/apple-imac-pro-front-view-mockup-1000x750.jpg",
+				title: "Project",
+				description: "Above all, we are engineers, and our mission is to find the most elegant and economical solutions to"
+			}
+		},
+		{
+			button: "AI",
+			header: "Artificial Intelligence development",
+			description: "We have huge experience in mobile applications development. To see our stages of development and best case studies click here.",
+			project: {
+				poster: "https://www.free-mockup.com/wp-content/uploads/edd/2020/02/macbook-pro-workspace-mockup-1000x750.jpg",
 				title: "Project",
 				description: "Above all, we are engineers, and our mission is to find the most elegant and economical solutions to"
 			}
