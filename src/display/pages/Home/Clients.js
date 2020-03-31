@@ -3,9 +3,14 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import Typography from '@material-ui/core/Typography';
 
+import glovo from '../../../data/glovo.svg';
+import binance from '../../../data/binance.svg';
+import uber from '../../../data/uber.svg';
+import starbucks from '../../../data/starbucks.svg';
+
 const Clients = () => {
 	return (
-		<Grid container spacing={2} style={{marginTop: 10}} align="center">
+		<Grid container spacing={4} style={{marginTop: 10}} align="center">
 			<Grid item md={12}>
 				<Typography variant="h3" align="center" component="h2" gutterBottom>
 					Clients we work with
@@ -14,28 +19,22 @@ const Clients = () => {
                     We work with companies that need a reliable partner in software development field. We dive into their business process to provide them the best solutions.
                 </Typography>
 			</Grid>
-            <Grid item xs={4} md={3}>
-				<Typography variant="h5" align="center" component="h3" gutterBottom>
-					Client
-				</Typography>
+			<Grid container spacing={2}   alignItems="center">
+	            <Grid item xs={4} md={3}>
+					<img src={glovo} height="80"/>
+				</Grid>
+	            <Grid item xs={4} md={3}>
+					<img src={binance}  height="36"/>
+				</Grid>
+	            <Grid item xs={4} md={3}>
+					<img src={uber}  height="30"/>
+				</Grid>
+	            <Hidden smDown>
+	                <Grid item  md={3}>
+						<img src={starbucks}  height="50"/>
+	    			</Grid>
+	            </Hidden>
 			</Grid>
-            <Grid item xs={4} md={3}>
-				<Typography variant="h5" align="center" component="h3" gutterBottom>
-					Client
-				</Typography>
-			</Grid>
-            <Grid item xs={4} md={3}>
-				<Typography variant="h5" align="center" component="h3" gutterBottom>
-					Client
-				</Typography>
-			</Grid>
-            <Hidden smDown>
-                <Grid item  md={3}>
-    				<Typography variant="h5" align="center" component="h3" gutterBottom>
-    					Client
-    				</Typography>
-    			</Grid>
-            </Hidden>
 		</Grid>
 	);
 }
