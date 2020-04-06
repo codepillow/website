@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
     	<Box textAlign="center" my={5} fontWeight={200}>
-      		Made with ❤️ by Vobil & olexh
+      		Made with ❤️ by CodePillow
       	</Box>
     </footer>
   );
