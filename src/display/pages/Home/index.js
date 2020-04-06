@@ -11,6 +11,7 @@ import Clients from "./Clients";
 import Technologies from "./Technologies";
 import Fields from "./Fields";
 import Team from "./Team";
+import ContactUs from "./ContactUs";
 
 const Home = () => {
   	return (
@@ -21,6 +22,7 @@ const Home = () => {
 			<Technologies />
 			<Fields />
 			<Team />
+            <ContactUs />
 		</Container>
   	);
 }
