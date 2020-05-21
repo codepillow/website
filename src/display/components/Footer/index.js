@@ -45,12 +45,12 @@ const Footer = () => {
 	    			</Grid>
     			</Hidden>
     			<Grid item>
-	    			<SocialButton variant="contained" target="_blank" href="https://fb.com" color="primary" disableElevation>
+	    			<SocialButton variant="contained" target="_blank" href="https://fb.com/codepillow" color="primary" disableElevation>
 						<FacebookIcon />
 					</SocialButton>
     			</Grid>
     			<Grid item>
-	    			<SocialButton variant="contained" target="_blank" href="https://linkedin.com" color="primary" disableElevation>
+	    			<SocialButton variant="contained" target="_blank" href="https://linkedin.com/company/codepillow" color="primary" disableElevation>
 						<LinkedInIcon />
 					</SocialButton>
     			</Grid>
@@ -60,7 +60,7 @@ const Footer = () => {
 					</SocialButton>
     			</Grid>
     			<Grid item>
-	    			<SocialButton variant="contained" target="_blank" href="https://twitter.com" color="primary" disableElevation>
+	    			<SocialButton variant="contained" target="_blank" href="https://twitter.com/codepillow" color="primary" disableElevation>
 						<TwitterIcon />
 					</SocialButton>
     			</Grid>
