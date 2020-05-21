@@ -17,7 +17,6 @@ const Application = () => {
 		<BrowserRouter>
 			<ThemeProvider theme={theme}>
 				<CssBaseline />
-				<Header />
 				<Switch>
 					<Route
 						path="/"

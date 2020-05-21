@@ -4,6 +4,7 @@ import Hidden from '@material-ui/core/Hidden';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Project from '../../components/Project';
+import Box from '@material-ui/core/Box';
 
 import { withStyles } from '@material-ui/core/styles';
 
@@ -16,6 +17,8 @@ const FieldButton = withStyles(theme => ({
 		paddingRight: 5,
 		margin: 5,
 		marginLeft: 10,
+		minHeight: 0,
+		minWidth: 0,
 		marginRight: 10,
 		letterSpacing: "0.75px"
 	},
@@ -74,7 +77,7 @@ const Fields = () => {
 	const [activeField, setActiveField] = useState(0);
 
 	return (
-		<div>
+		<Box my={12} id="fields">
 			<Grid container spacing={2} style={{marginTop: 10}} align="center">
 				<Grid item md={12}>
 					<Typography variant="h3" align="center" component="h2" gutterBottom>
@@ -110,7 +113,7 @@ const Fields = () => {
 					<Project data={defaultFields[activeField].project} />
 				</Grid>
 			</Grid>
-		</div>
+		</Box>
 	);
 }
 

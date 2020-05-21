@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
+import Nav from "./Nav";
 import Header from "./Header";
 import Benefits from "./Benefits";
 import Clients from "./Clients";
@@ -16,6 +17,7 @@ import ContactUs from "./ContactUs";
 const Home = () => {
   	return (
 		<Container>
+			<Nav />
 			<Header />
 			<Benefits />
 			<Clients />

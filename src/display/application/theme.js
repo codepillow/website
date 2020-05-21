@@ -25,9 +25,18 @@ const theme = createMuiTheme({
     fontFamily: ["Quicksand"].join(','),
     button: {
       textTransform: "none",
-      fontWeight: "bold"
+      fontWeight: "bold",
     }
   },
+  overrides: {
+    MuiButton: {
+      // Name of the rule
+      root: {
+        minWidth: 160,
+        minHeight: 45,
+      }
+    },
+  }
 });
 
 theme.typography.h2 = {
@@ -58,7 +67,7 @@ theme.typography.subtitle1 = {
   color: '#999999',
   fontSize: '16px',
   [theme.breakpoints.down('sm')]: {
-    fontSize: '12px',
+    fontSize: '14px',
   },
 };
 
@@ -66,7 +75,7 @@ theme.typography.subtitle2 = {
   color: '#999999',
   fontSize: '14px',
   [theme.breakpoints.down('sm')]: {
-    fontSize: '11px',
+    fontSize: '12px',
   },
 };
 
