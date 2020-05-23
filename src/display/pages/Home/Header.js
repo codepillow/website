@@ -51,24 +51,24 @@ const Header = () => {
 				<span style={secondStyle} className={classes.shape} />
 				<Grid container alignItems="center" justify="center" spacing={2}>
 					<Grid item md={6} xs={12} sm={12}>
-						<ScrollAnimation animateIn="fadeIn">
+						<ScrollAnimation animateIn="fadeIn" animateOnce="true">
 							<Typography variant="h2" component="h1">
 								We turn you ideas into <span style={styles.highlighter}>beautiful</span> products
 							</Typography>
 						</ScrollAnimation>
-						<ScrollAnimation animateIn="fadeIn" delay={200}>
+						<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={200}>
 							<Typography variant="subtitle1" component="p" gutterBottom>
-								And we dream of making a project for you!
+								And we dream of collaborating with you!
 							</Typography>
 						</ScrollAnimation>
-						<ScrollAnimation animateIn="fadeIn" delay={250}>
+						<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={250}>
 							<Button variant="contained" color="primary" disableElevation style={{marginTop: 25}}>
 								Start out
 							</Button>
 						</ScrollAnimation>
 					</Grid>
 					<Grid item md={6} xs={12} sm={8}>
-						<ScrollAnimation animateIn="fadeIn">
+						<ScrollAnimation animateIn="fadeIn" animateOnce="true">
 							<img src={headerImg} width="100%" />
 						</ScrollAnimation>
 					</Grid>

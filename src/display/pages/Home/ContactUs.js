@@ -54,10 +54,10 @@ const ContactUs = () => {
                         </Typography>
                     </Grid>
                      <Grid item md={7} xs={12} sm={12} align="left">
-                        <Button variant="outlined" color="primary" fullWidth>Some button</Button>
+                        <Button variant="outlined" color="primary" href="mailto:codepillow@pm.me" fullWidth>codepillow@pm.me</Button>
                     </Grid>
                     <Grid item md={7} xs={12} sm={12} align="left">
-                        <Button variant="outlined" color="primary" fullWidth>+380 63 688 23 83</Button>
+                        <Button variant="outlined" color="primary" href="tel:380636882383" fullWidth>+380 63 688 23 83</Button>
                     </Grid>
                     <Grid item md={7} xs={12} sm={12} align="left">
                         <TextField id="outlined-basic" label="Email" variant="outlined" fullWidth />

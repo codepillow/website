@@ -41,10 +41,10 @@ const Technologies = () => {
 				<Grid container spacing={4} style={{marginTop: 10}} align="center">
 					<Grid item md={12}>
 						<Typography variant="h3" align="center" component="h2" gutterBottom>
-							Technologies that we use
+							Technologies we use
 						</Typography>
 		                <Typography variant="subtitle1" align="center" component="p" style={{width: "75%"}} gutterBottom>
-		                    Above all, we are engineers, and our mission is to find the most elegant and economical solutions to business problems. In our work we use various tools, technologies and programming languages, but most often it is JavaScript.
+                            Above all, we are engineers, and our mission is to find the most elegant and economical solutions for business problems. In our work we use various tools, technologies, and programming languages, the main of them listed belowe.
 		                </Typography>
 					</Grid>
 		            <Grid item xs={4} md={2}>

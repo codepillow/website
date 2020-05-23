@@ -84,10 +84,9 @@ const Fields = () => {
 				<Grid container spacing={2} style={{marginTop: 10}} align="center">
 					<Grid item md={12}>
 						<Typography variant="h3" align="center" component="h2" gutterBottom>
-							Our fields
+							Our fields of knowledge
 						</Typography>
 		                <Typography variant="subtitle1" align="center" style={{width: "75%"}} component="p" gutterBottom>
-							Above all, we are engineers, and our mission is to find the most elegant and economical solutions to business problems in our
 		                </Typography>
 					</Grid>
 				</Grid>

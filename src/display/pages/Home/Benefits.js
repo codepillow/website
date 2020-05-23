@@ -24,13 +24,13 @@ const Benefits = () => {
 				</Grid>
 				<Grid container align="center" alignItems="center">
 					<Grid item md={2} sm={4} xs={12}>
-						<ScrollAnimation animateIn="fadeIn">
+						<ScrollAnimation animateIn="fadeIn" animateOnce="true">
 							<BrushIcon color="primary" fontSize="large" />
 							<Typography variant="h5" align="center" component="h3" gutterBottom>
 							  	Solid Design
 							</Typography>
 							<Typography variant="subtitle2" align="center" component="p">
-							 	Our design doesn't get out of date in a week
+								We create a timeless design, it doesn't get out of date after one-week usage
 							</Typography>
 						</ScrollAnimation>
 					</Grid>
@@ -40,13 +40,13 @@ const Benefits = () => {
 						</Grid>
 					</Hidden>
 					<Grid item md={2} sm={4} xs={12}>
-						<ScrollAnimation animateIn="fadeIn" delay={200}>
+						<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={200}>
 							<TouchAppIcon color="primary" fontSize="large" />
 							<Typography variant="h5" align="center" component="h3" gutterBottom>
 								Usability
 							</Typography>
 							<Typography variant="subtitle2" align="center" component="p">
-								It's important to us that the interface doesn't worry the user
+								It's important for us to create a perfect app user experience for future customers
 							</Typography>
 						</ScrollAnimation>
 					</Grid>
@@ -56,13 +56,13 @@ const Benefits = () => {
 						</Grid>
 					</Hidden>
 					<Grid item md={2} sm={4} xs={12}>
-					<ScrollAnimation animateIn="fadeIn" delay={250}>
+					<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={250}>
 							<CodeIcon color="primary" fontSize="large" />
 							<Typography variant="h5" align="center" component="h3" gutterBottom>
 								Engineering
 							</Typography>
 							<Typography variant="subtitle2" align="center" component="p">
-								We have a lot of technology in our hands
+								We've hands-on experience in lots of technology and  gain new all the time
 							</Typography>
 						</ScrollAnimation>
 					</Grid>

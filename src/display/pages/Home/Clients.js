@@ -43,27 +43,27 @@ const Clients = () => {
 						Clients we work with
 					</Typography>
 	                <Typography variant="subtitle1" align="center" style={{width: "75%"}} component="p" gutterBottom>
-	                    We work with companies that need a reliable partner in software development field. We dive into their business process to provide them the best solutions.
-	                </Typography>
+                        We work with companies that need a reliable partner in the software development field. We dive into their business process to provide them the best solutions.
+                    </Typography>
 				</Grid>
 				<Grid container spacing={2}   alignItems="center">
 		            <Grid item xs={12} md={3} sm={6}>
-		            	<ScrollAnimation animateIn="fadeIn">
+		            	<ScrollAnimation animateIn="fadeIn" animateOnce="true">
 							<img src={glovo} height="80"/>
 						</ScrollAnimation>
 					</Grid>
 		            <Grid item xs={12} md={3} sm={6}>
-			            <ScrollAnimation animateIn="fadeIn" delay={200}>
+			            <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={200}>
 							<img src={binance}  height="36"/>
 						</ScrollAnimation>
 					</Grid>
 		            <Grid item xs={12} md={3} sm={6}>
-			            <ScrollAnimation animateIn="fadeIn" delay={250}>
+			            <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={250}>
 							<img src={uber}  height="30"/>
 						</ScrollAnimation>
 					</Grid>
 	                <Grid item xs={12} md={3} sm={6}>
-	                	<ScrollAnimation animateIn="fadeIn" delay={300}>
+	                	<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={300}>
 							<img src={starbucks}  height="50"/>
 						</ScrollAnimation>
 	    			</Grid>

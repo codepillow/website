@@ -25,7 +25,7 @@ const Team = () => {
 	                    Volodymyr Biloshytskyi
 					</Typography>
 					<Typography variant="subtitle2" align="center" component="p">
-	                    Lya kakoi dadya, nu ti posmotri
+						Software Engineer
 					</Typography>
 				</Grid>
 	            <Grid item xs={12} md={4} sm={4}>
@@ -34,7 +34,7 @@ const Team = () => {
 						Oleh Basystiuk
 					</Typography>
 					<Typography variant="subtitle2" align="center" component="p">
-	                    Lya kakoi dadya, nu ti posmotri
+	                    Software Engineer
 					</Typography>
 				</Grid>
 	            <Grid item xs={12} md={4} sm={4}>
@@ -43,7 +43,7 @@ const Team = () => {
 						Oleh Nykoliak
 					</Typography>
 					<Typography variant="subtitle2" align="center" component="p">
-	                    Lya kakoi dadya, nu ti posmotri
+	                    Software Engineer
 					</Typography>
 				</Grid>
 			</Grid>
