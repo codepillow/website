@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { goToTop } from 'react-scrollable-anchor'
+import { goToTop, goToAnchor } from 'react-scrollable-anchor'
 
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -21,6 +21,10 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 
 import MenuIcon from '@material-ui/icons/Menu';
 import AllInclusiveIcon from '@material-ui/icons/AllInclusive';
+import GroupIcon from '@material-ui/icons/Group';
+import CodeIcon from '@material-ui/icons/Code';
+import FolderIcon from '@material-ui/icons/Folder';
+import EmailIcon from '@material-ui/icons/Email';
 import logo from '../../../data/logo.svg';
 
 import { withStyles } from '@material-ui/core/styles';
@@ -57,6 +61,11 @@ function HideOnScroll(props) {
 
 const Nav = (props) => {
     const [showDrawer, setShowDrawer] = useState(false);
+
+    const goToElement = (element) => {
+        goToAnchor(element);
+        setShowDrawer(false);
+    }
 
     return (
         <HideOnScroll {...props}>
@@ -112,11 +121,36 @@ const Nav = (props) => {
                 </Container>
                 <Drawer anchor={"right"} open={showDrawer} onClose={() => setShowDrawer(false)}>
                     <List style={{width: "250px"}}>
-                        <ListItem button>
+                        <ListItem button onClick={() => goToElement("process")}>
                             <ListItemIcon>
                                 <AllInclusiveIcon />
                             </ListItemIcon>
                             <ListItemText primary={"Process"} />
+                        </ListItem>
+                        <ListItem button onClick={() => goToElement("clients")}>
+                            <ListItemIcon>
+                                <GroupIcon />
+                            </ListItemIcon>
+                            <ListItemText primary={"Clients"} />
+                        </ListItem>
+                        <ListItem button onClick={() => goToElement("technologies")}>
+                            <ListItemIcon>
+                                <CodeIcon />
+                            </ListItemIcon>
+                            <ListItemText primary={"Technologies"} />
+                        </ListItem>
+                        <ListItem button onClick={() => goToElement("fields")}>
+                            <ListItemIcon>
+                                <FolderIcon />
+                            </ListItemIcon>
+                            <ListItemText primary={"Projects"} />
+                        </ListItem>
+                        <Divider />
+                        <ListItem button onClick={() => goToElement("contact")}>
+                            <ListItemIcon>
+                                <EmailIcon />
+                            </ListItemIcon>
+                            <ListItemText primary={"Contact us"} />
                         </ListItem>
                     </List>
                 </Drawer>
