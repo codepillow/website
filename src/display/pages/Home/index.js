@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { configureAnchors } from 'react-scrollable-anchor'
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
@@ -15,6 +16,10 @@ import Team from "./Team";
 import ContactUs from "./ContactUs";
 
 const Home = () => {
+	useEffect(() => {
+		configureAnchors({offset: -60, scrollDuration: 200});
+	})
+
   	return (
 		<Container>
 			<Nav />

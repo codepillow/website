@@ -39,7 +39,7 @@ const Footer = () => {
     		<Grid container spacing={2}>
     			<Hidden mdDown>
 	    			<Grid item>
-	    				<Link href="#">
+	    				<Link href="#header">
 	    					<img src={logo} width="100%" />
 	    				</Link>
 	    			</Grid>

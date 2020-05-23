@@ -1,4 +1,6 @@
 import React from "react";
+import { goToTop } from 'react-scrollable-anchor'
+
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
@@ -47,6 +49,7 @@ function HideOnScroll(props) {
 
 
 const Nav = (props) => {
+
     return (
         <HideOnScroll {...props}>
             <AppBar color="transparent" elevation={0}>
@@ -54,7 +57,9 @@ const Nav = (props) => {
                     <Toolbar>
                         <Grid container alignItems="center">
                             <Grid item >
-                                <img src={logo} width="100%" />
+                                <a href="#header">
+                                    <img src={logo} width="100%" />
+                                </a>
                             </Grid>
                             <Grid item md align="right">
                                 <MenuButton href="#process">

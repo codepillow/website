@@ -5,8 +5,6 @@ import storage from "redux-persist/lib/storage";
 import Application from "./display/application";
 import { Provider } from "react-redux";
 import { getStorage } from "./state/store";
-import 'react-alice-carousel/lib/alice-carousel.css'
-import "video-react/dist/video-react.css"; // import css
 
 const persistConfig = {
   key: "daily-harvest-web-persist-store",
