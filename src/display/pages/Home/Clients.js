@@ -2,6 +2,8 @@ import React from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
 import ScrollableAnchor from 'react-scrollable-anchor'
 
+import { makeStyles } from '@material-ui/core/styles';
+
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import Typography from '@material-ui/core/Typography';
@@ -13,22 +15,28 @@ import uber from '../../../data/uber.svg';
 import starbucks from '../../../data/starbucks.svg';
 import fourth from '../../../data/backs/4.svg';
 
+const useStyles = makeStyles((theme) => ({
+  shape: {
+  	position: "absolute",
+  	zIndex: "-1",
+    [theme.breakpoints.down('md')]: {
+      opacity: "0.4"
+    }
+  },
+}));
+
 const Clients = () => {
+	const classes = useStyles();
+
 	const fourthStyle = {
-		position: "absolute",
-		backgroundImage: `url(${fourth})`,
-		height: "500px",
-		width: "250px",
-		zIndex: "-1",
-		backgroundRepeat: "no-repeat",
-		backgroundSize: "contain",
+		content: `url(${fourth})`,
 		right: 0
 	}
 
 	return (
 		<ScrollableAnchor id={'clients'}>
 		<Box my={12}>
-			<span style={fourthStyle} />
+			<span style={fourthStyle} className={classes.shape} />
 			<Grid container spacing={4} style={{marginTop: 10}} align="center">
 				<Grid item md={12}>
 					<Typography variant="h3" align="center" component="h2" gutterBottom>

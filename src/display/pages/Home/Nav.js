@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { goToTop } from 'react-scrollable-anchor'
 
 import Grid from '@material-ui/core/Grid';
@@ -7,29 +7,36 @@ import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import Hidden from '@material-ui/core/Hidden';
 import Slide from '@material-ui/core/Slide';
 import Container from '@material-ui/core/Container';
+import IconButton from '@material-ui/core/IconButton';
+import Drawer from '@material-ui/core/Drawer';
+import List from '@material-ui/core/List';
+import Divider from '@material-ui/core/Divider';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 
-import CodeIcon from '@material-ui/icons/Code';
-import TouchAppIcon from '@material-ui/icons/TouchApp';
-import BrushIcon from '@material-ui/icons/Brush';
+import MenuIcon from '@material-ui/icons/Menu';
+import AllInclusiveIcon from '@material-ui/icons/AllInclusive';
 import logo from '../../../data/logo.svg';
 
 import { withStyles } from '@material-ui/core/styles';
 
 const MenuButton = withStyles(theme => ({
     root: {
-    textTransform: 'uppercase',
-    padding: 0,
-    paddingLeft: 5,
-    paddingRight: 5,
-    margin: 5,
-    marginLeft: 10,
-    minHeight: 0,
-    minWidth: 0,
-    marginRight: 10,
-    letterSpacing: "0.75px"
+        textTransform: 'uppercase',
+        padding: 0,
+        paddingLeft: 5,
+        paddingRight: 5,
+        margin: 5,
+        marginLeft: 10,
+        minHeight: 0,
+        minWidth: 0,
+        marginRight: 10,
+        letterSpacing: "0.75px"
     },
 }))(Button);
 
@@ -49,38 +56,70 @@ function HideOnScroll(props) {
 
 
 const Nav = (props) => {
+    const [showDrawer, setShowDrawer] = useState(false);
 
     return (
         <HideOnScroll {...props}>
             <AppBar color="transparent" elevation={0}>
                 <Container>
                     <Toolbar>
-                        <Grid container alignItems="center">
-                            <Grid item >
-                                <a href="#header">
-                                    <img src={logo} width="100%" />
-                                </a>
+                        <Hidden smDown>
+                            <Grid container alignItems="center">
+                                <Grid item>
+                                    <a href="#header">
+                                        <img src={logo} width="100%" />
+                                    </a>
+                                </Grid>
+                                <Grid item md align="right">
+                                    <MenuButton href="#process">
+                                        Process
+                                    </MenuButton>
+                                    <MenuButton href="#clients">
+                                        Clients
+                                    </MenuButton>
+                                    <MenuButton href="#technologies">
+                                        Technologies
+                                    </MenuButton>
+                                    <MenuButton href="#fields">
+                                        Projects
+                                    </MenuButton>
+                                    <MenuButton href="#contact" variant="contained" disableElevation>
+                                        Contact us
+                                    </MenuButton>
+                                </Grid>
                             </Grid>
-                            <Grid item md align="right">
-                                <MenuButton href="#process">
-                                    Process
-                                </MenuButton>
-                                <MenuButton href="#clients">
-                                    Clients
-                                </MenuButton>
-                                <MenuButton href="#technologies">
-                                    Technologies
-                                </MenuButton>
-                                <MenuButton href="#fields">
-                                    Projects
-                                </MenuButton>
-                                <MenuButton href="#contact" variant="contained" disableElevation>
-                                    Contact us
-                                </MenuButton>
+                        </Hidden>
+                        <Hidden mdUp>
+                            <Grid container alignItems="center">
+                                <Grid item>
+                                    <a href="#header">
+                                        <img src={logo} width="100%" />
+                                    </a>
+                                </Grid>
+                                <Grid item sm xs align="right">
+                                    <IconButton
+                                        edge="start"
+                                        color="inherit"
+                                        aria-label="open drawer"
+                                        onClick={() => setShowDrawer(true)}
+                                    >
+                                        <MenuIcon />
+                                    </IconButton>
+                                </Grid>
                             </Grid>
-                        </Grid>
+                        </Hidden>
                     </Toolbar>
                 </Container>
+                <Drawer anchor={"right"} open={showDrawer} onClose={() => setShowDrawer(false)}>
+                    <List style={{width: "250px"}}>
+                        <ListItem button>
+                            <ListItemIcon>
+                                <AllInclusiveIcon />
+                            </ListItemIcon>
+                            <ListItemText primary={"Process"} />
+                        </ListItem>
+                    </List>
+                </Drawer>
             </AppBar>
         </HideOnScroll>
     );

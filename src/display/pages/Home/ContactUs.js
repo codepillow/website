@@ -1,6 +1,8 @@
 import React from "react";
 import ScrollableAnchor from 'react-scrollable-anchor'
 
+import { makeStyles } from '@material-ui/core/styles';
+
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -14,34 +16,34 @@ import Button from '@material-ui/core/Button';
 import fifth from '../../../data/backs/5.svg';
 import sixth from '../../../data/backs/6.svg';
 
+const useStyles = makeStyles((theme) => ({
+  shape: {
+      position: "absolute",
+      zIndex: "-1",
+    [theme.breakpoints.down('md')]: {
+      opacity: "0.4"
+    }
+  },
+}));
+
 const ContactUs = () => {
+    const classes = useStyles();
+
     const fifthStyle = {
-        position: "absolute",
-        backgroundImage: `url(${fifth})`,
-        height: "500px",
-        width: "250px",
-        zIndex: "-1",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "contain",
+        content: `url(${fifth})`,
         left: 0
     }
 
     const sixthStyle = {
-        position: "absolute",
-        backgroundImage: `url(${sixth})`,
-        height: "500px",
-        width: "250px",
-        zIndex: "-1",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "contain",
+        content: `url(${sixth})`,
         right: 0
     }
 
     return (
         <ScrollableAnchor id={'contact'}>
             <Box my={12}>
-                <span style={fifthStyle} />
-                <span style={sixthStyle} />
+                <span style={fifthStyle} className={classes.shape} />
+                <span style={sixthStyle} className={classes.shape} />
                 <Grid container spacing={2} style={{marginTop: 10}} justify="center">
                     <Grid item md={7} xs={12} sm={12} align="center">
                         <Typography variant="h3" align="center" component="h2" gutterBottom>

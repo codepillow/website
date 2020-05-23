@@ -1,6 +1,8 @@
 import React from "react";
 import ScrollableAnchor from 'react-scrollable-anchor'
 
+import { makeStyles } from '@material-ui/core/styles';
+
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
@@ -14,22 +16,28 @@ import laravel from '../../../data/laravel.svg';
 import angular from '../../../data/angular.svg';
 import third from '../../../data/backs/3.svg';
 
+const useStyles = makeStyles((theme) => ({
+  shape: {
+  	position: "absolute",
+  	zIndex: "-1",
+    [theme.breakpoints.down('md')]: {
+      opacity: "0.4"
+    }
+  },
+}));
+
 const Technologies = () => {
+	const classes = useStyles();
+
 	const thirdStyle = {
-		position: "absolute",
-		backgroundImage: `url(${third})`,
-		height: "500px",
-		width: "250px",
-		zIndex: "-1",
-		backgroundRepeat: "no-repeat",
-		backgroundSize: "contain",
+		content: `url(${third})`,
 		left: 0
 	}
 
 	return (
 		<ScrollableAnchor id={'technologies'}>
 			<Box my={12}>
-				<span style={thirdStyle} />
+				<span style={thirdStyle} className={classes.shape} />
 				<Grid container spacing={4} style={{marginTop: 10}} align="center">
 					<Grid item md={12}>
 						<Typography variant="h3" align="center" component="h2" gutterBottom>

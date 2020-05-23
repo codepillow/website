@@ -17,7 +17,7 @@ import ContactUs from "./ContactUs";
 
 const Home = () => {
 	useEffect(() => {
-		configureAnchors({offset: -60, scrollDuration: 200});
+		configureAnchors({scrollDuration: 200});
 	})
 
   	return (

@@ -41,9 +41,9 @@ const theme = createMuiTheme({
 
 theme.typography.h2 = {
   fontWeight: 'bold',
-  fontSize: '50px',
+  fontSize: '60px',
   [theme.breakpoints.down('sm')]: {
-    fontSize: '38px',
+    fontSize: '44px',
   },
 };
 
