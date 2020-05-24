@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
 import ScrollableAnchor from 'react-scrollable-anchor'
+import Tooltip from '@material-ui/core/Tooltip';
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -50,32 +51,44 @@ const Technologies = () => {
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce="true">
-						    <img src={react} height="70"/>
+                            <Tooltip title="React" placement="top">
+    						    <img src={react} height="70"/>
+                            </Tooltip>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={200}>
-    						<img src={redux} height="60"/>
+                            <Tooltip title="Redux" placement="top">
+        						<img src={redux} height="60"/>
+                            </Tooltip>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={250}>
-    						<img src={swift} height="60"/>
+                            <Tooltip title="Swift" placement="top">
+        						<img src={swift} height="60"/>
+                            </Tooltip>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={300}>
-    						<img src={kotlin} height="60"/>
+                            <Tooltip title="Kotlin" placement="top">
+        						<img src={kotlin} height="60"/>
+                            </Tooltip>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={350}>
-    						<img src={laravel} height="60"/>
+                            <Tooltip title="Laravel" placement="top">
+                                <img src={laravel} height="60"/>
+                            </Tooltip>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={400}>
-    						<img src={angular} height="60"/>
+                            <Tooltip title="Angular" placement="top">
+        						<img src={angular} height="60"/>
+                            </Tooltip>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs>
