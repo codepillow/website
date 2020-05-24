@@ -93,7 +93,7 @@ const Footer = () => {
 					</SocialButton>
     			</Grid>
     			<Grid item md xs sm align="right" alignItems="center">
-					<Button onClick={handleClickOpen('paper')}>Privacy policy</Button>
+					<Button onClick={handleClickOpen('paper')} color="primary">Privacy policy</Button>
     			</Grid>
     		</Grid>
       	</Box>
