@@ -62,7 +62,7 @@ const Header = () => {
 							</Typography>
 						</ScrollAnimation>
 						<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={250}>
-							<Button variant="contained" color="primary" disableElevation style={{marginTop: 25}}>
+							<Button variant="contained" href="#contact" color="primary" disableElevation style={{marginTop: 25}}>
 								Start out
 							</Button>
 						</ScrollAnimation>

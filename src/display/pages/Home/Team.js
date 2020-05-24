@@ -11,7 +11,7 @@ import olexh from '../../../data/olexh.svg';
 
 const Team = () => {
 	return (
-		<ScrollableAnchor id={'process'}>
+		<ScrollableAnchor id={'team'}>
 		<Box my={12}>
 			<Grid container spacing={2} style={{marginTop: 10}} align="center">
 				<Grid item md={12}>
