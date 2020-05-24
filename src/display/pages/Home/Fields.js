@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import ScrollAnimation from 'react-animate-on-scroll';
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 import Grid from '@material-ui/core/Grid';
@@ -36,19 +37,9 @@ const FieldButton = withStyles(theme => ({
 const Fields = () => {
 	const defaultFields = [
 		{
-			button: "Mobile",
-			header: "Mobile applications",
-			description: "We have huge experience in mobile applications development. To see our stages of development and best case studies click here.",
-			project: {
-				poster: "https://www.free-mockup.com/wp-content/uploads/edd/2020/03/Free-Responsive-Website-Mockup-01.jpg",
-				title: "Project",
-				description: "Above all, we are engineers, and our mission is to find the most elegant and economical solutions to"
-			}
-		},
-		{
 			button: "Web",
 			header: "Frontend & Backend development",
-			description: "We have huge experience in mobile applications development. To see our stages of development and best case studies click here.",
+			description: "Web development was an initial branch of our team. We've created lots of big and cool projects. Take a look at them in detail.",
 			project: {
 				poster: "https://www.free-mockup.com/wp-content/uploads/edd/2020/02/isometric-surface-laptop-3-free-mockup-1000x750.jpg",
 				title: "Project",
@@ -56,9 +47,19 @@ const Fields = () => {
 			}
 		},
 		{
+			button: "Mobile",
+			header: "Mobile applications",
+			description: "We've huge expertise in mobile application development. Research our stages of the development process and check the best case studies we've done.",
+			project: {
+				poster: "https://www.free-mockup.com/wp-content/uploads/edd/2020/03/Free-Responsive-Website-Mockup-01.jpg",
+				title: "Project",
+				description: "Above all, we are engineers, and our mission is to find the most elegant and economical solutions to"
+			}
+		},
+		{
 			button: "Blockchain",
-			header: "Blockchain",
-			description: "We have huge experience in mobile applications development. To see our stages of development and best case studies click here.",
+			header: "Blockchain technologies",
+			description: "Our passion for a few last years was the Blockchain industry. We've created coins, tokens, and all kinds of infrastructure for kicking out new crypto solutions.",
 			project: {
 				poster: "https://www.free-mockup.com/wp-content/uploads/edd/2020/02/apple-imac-pro-front-view-mockup-1000x750.jpg",
 				title: "Project",
@@ -68,7 +69,7 @@ const Fields = () => {
 		{
 			button: "AI",
 			header: "Artificial Intelligence development",
-			description: "We have huge experience in mobile applications development. To see our stages of development and best case studies click here.",
+			description: "Technologies of the future begins growth nowadays. We provide our AI expertise to varieties of startups and prospective research projects.",
 			project: {
 				poster: "https://www.free-mockup.com/wp-content/uploads/edd/2020/02/macbook-pro-workspace-mockup-1000x750.jpg",
 				title: "Project",
@@ -81,6 +82,7 @@ const Fields = () => {
 	return (
 		<ScrollableAnchor id={'fields'}>
 			<Box my={12}>
+			<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay="200">
 				<Grid container spacing={2} style={{marginTop: 10}} align="center">
 					<Grid item md={12}>
 						<Typography variant="h3" align="center" component="h2" gutterBottom>
@@ -115,6 +117,7 @@ const Fields = () => {
 						<Project data={defaultFields[activeField].project} />
 					</Grid>
 				</Grid>
+			</ScrollAnimation>
 			</Box>
 		</ScrollableAnchor>
 	);

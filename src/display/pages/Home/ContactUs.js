@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollAnimation from 'react-animate-on-scroll';
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -42,6 +43,7 @@ const ContactUs = () => {
     return (
         <ScrollableAnchor id={'contact'}>
             <Box my={12}>
+            <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay="200">
                 <span style={fifthStyle} className={classes.shape} />
                 <span style={sixthStyle} className={classes.shape} />
                 <Grid container spacing={2} style={{marginTop: 10}} justify="center">
@@ -85,6 +87,7 @@ const ContactUs = () => {
                         </Button>
                     </Grid>
                 </Grid>
+            </ScrollAnimation>
             </Box>
         </ScrollableAnchor>
     );
