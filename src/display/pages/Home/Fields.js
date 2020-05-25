@@ -82,42 +82,42 @@ const Fields = () => {
 	return (
 		<ScrollableAnchor id={'fields'}>
 			<Box my={12}>
-			<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay="200">
-				<Grid container spacing={2} style={{marginTop: 10}} align="center">
-					<Grid item md={12}>
-						<Typography variant="h3" align="center" component="h2" gutterBottom>
-							Our fields of knowledge
-						</Typography>
-		                <Typography variant="subtitle1" align="center" style={{width: "75%"}} component="p" gutterBottom>
-		                </Typography>
+				<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay="200">
+					<Grid container spacing={2} style={{marginTop: 10}} align="center">
+						<Grid item md={12}>
+							<Typography variant="h3" align="center" component="h2" gutterBottom>
+								Our fields of knowledge
+							</Typography>
+			                <Typography variant="subtitle1" align="center" style={{width: "75%"}} component="p" gutterBottom>
+			                </Typography>
+						</Grid>
 					</Grid>
-				</Grid>
-				<Grid container spacing={5} alignItems="center">
-					<Grid item xs={12} md={12} align="center">
-						{
-							defaultFields.map((field, index) => {
-								return <FieldButton small variant={activeField == index ? "contained" : "text"} color="primary" disableElevation onClick={() => setActiveField(index)}>
-											{field.button}
-										</FieldButton>
-							})
-						}
+					<Grid container spacing={2} alignItems="center">
+						<Grid item xs={12} md={12} align="center">
+							{
+								defaultFields.map((field, index) => {
+									return <FieldButton small variant={activeField == index ? "contained" : "text"} color="primary" disableElevation onClick={() => setActiveField(index)}>
+												{field.button}
+											</FieldButton>
+								})
+							}
+						</Grid>
+			            <Grid item xs={12} md={6}>
+							<Typography variant="h5" component="h3" gutterBottom>
+								{defaultFields[activeField].header}
+							</Typography>
+							<Typography variant="subtitle1" component="p" gutterBottom>
+								{defaultFields[activeField].description}
+							</Typography>
+							<Button variant="contained" color="primary" disableElevation>
+								Find more
+							</Button>
+						</Grid>
+			            <Grid item xs={12} md={6}>
+							<Project data={defaultFields[activeField].project} />
+						</Grid>
 					</Grid>
-		            <Grid item xs={12} md={6}>
-						<Typography variant="h5" component="h3" gutterBottom>
-							{defaultFields[activeField].header}
-						</Typography>
-						<Typography variant="subtitle1" component="p" gutterBottom>
-							{defaultFields[activeField].description}
-						</Typography>
-						<Button variant="contained" color="primary" disableElevation>
-							Find more
-						</Button>
-					</Grid>
-		            <Grid item xs={12} md={6}>
-						<Project data={defaultFields[activeField].project} />
-					</Grid>
-				</Grid>
-			</ScrollAnimation>
+				</ScrollAnimation>
 			</Box>
 		</ScrollableAnchor>
 	);
