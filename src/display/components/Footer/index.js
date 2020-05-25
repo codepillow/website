@@ -12,7 +12,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
-import { withStyles, makeStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -36,12 +36,6 @@ const SocialButton = withStyles(theme => ({
 		},
 	},
 }))(Button);
-
-const useStyles = makeStyles((theme) => ({
-	clutch: {
-		justifyContent: "center"
-	},
-}));
 
 const PrivacyText = () => {
 	return (
@@ -239,7 +233,6 @@ const PrivacyText = () => {
 
 const Footer = () => {
 	const [open, setOpen] = useState(false);
-	const classes = useStyles();
 
 	const handleClickOpen = (scrollType) => () => {
 		setOpen(true);

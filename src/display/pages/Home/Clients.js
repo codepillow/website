@@ -38,7 +38,7 @@ const Clients = () => {
 			<Parallax y={[50, -50]} styleInner={fourthStyle}>
 				<img alt="fourth" src={fourth} className={classes.shape} />
 			</Parallax>
-			<Grid container spacing={4} style={{marginTop: 10}} align="center">
+			<Grid container spacing={2} style={{marginTop: 10}} align="center">
 				<Grid item md={12}>
 					<Typography variant="h3" align="center" component="h2" gutterBottom>
 						Clients we work with
@@ -47,8 +47,6 @@ const Clients = () => {
                         We work with companies that need a reliable partner in the software development field. We dive into their business process to provide them the best solutions.
                     </Typography>
 				</Grid>
-			</Grid>
-			<Grid container spacing={2} align="center">
 	            <Grid item xs={12} md={3} sm={6}>
 	            	<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
 						<img alt="glovo" src={glovo} height="80"/>
