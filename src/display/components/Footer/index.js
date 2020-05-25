@@ -12,7 +12,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles, makeStyles } from '@material-ui/core/styles';
 
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -36,6 +36,12 @@ const SocialButton = withStyles(theme => ({
 		},
 	},
 }))(Button);
+
+const useStyles = makeStyles((theme) => ({
+	clutch: {
+		justifyContent: "center"
+	},
+}));
 
 const PrivacyText = () => {
 	return (
@@ -232,81 +238,89 @@ const PrivacyText = () => {
 }
 
 const Footer = () => {
-  const [open, setOpen] = useState(false);
-  const [scroll, setScroll] = useState('paper');
+	const [open, setOpen] = useState(false);
+	const classes = useStyles();
 
-  const handleClickOpen = (scrollType) => () => {
-    setOpen(true);
-    setScroll(scrollType);
-  };
+	const handleClickOpen = (scrollType) => () => {
+		setOpen(true);
+	};
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+	const handleClose = () => {
+		setOpen(false);
+	};
 
-  const descriptionElementRef = useRef(null);
-  useEffect(() => {
-    if (open) {
-      const { current: descriptionElement } = descriptionElementRef;
-      if (descriptionElement !== null) {
-        descriptionElement.focus();
-      }
-    }
-  }, [open]);
+	const descriptionElementRef = useRef(null);
+	useEffect(() => {
+		if (open) {
+			const { current: descriptionElement } = descriptionElementRef;
+			if (descriptionElement !== null) {
+				descriptionElement.focus();
+			}
+		}
+	}, [open]);
 
-  return (
-    <Container>
-    	<Box textAlign="center" my={5} fontWeight={200}>
-    		<Grid container spacing={2}>
-    			<Hidden mdDown>
-	    			<Grid item>
-	    				<Link href="#header">
-	    					<img alt="logo" src={logo} width="100%" />
-	    				</Link>
-	    			</Grid>
-    			</Hidden>
-    			<Grid item>
-	    			<SocialButton variant="contained" target="_blank" href="https://fb.com/codepillow" color="primary" disableElevation>
-						<FacebookIcon />
-					</SocialButton>
-    			</Grid>
-    			<Grid item>
-	    			<SocialButton variant="contained" target="_blank" href="https://linkedin.com/company/codepillow" color="primary" disableElevation>
-						<LinkedInIcon />
-					</SocialButton>
-    			</Grid>
-    			<Grid item>
-	    			<SocialButton variant="contained" target="_blank" href="https://t.me/codepillow" color="primary" disableElevation>
-						<TelegramIcon />
-					</SocialButton>
-    			</Grid>
-    			<Grid item>
-	    			<SocialButton variant="contained" target="_blank" href="https://twitter.com/codepillow" color="primary" disableElevation>
-						<TwitterIcon />
-					</SocialButton>
-    			</Grid>
-    			<Grid item md xs sm align="right">
-					<Button onClick={handleClickOpen('paper')} color="primary">Privacy policy</Button>
-    			</Grid>
-    		</Grid>
-      	</Box>
+	return (
+		<Container>
+			<Box textAlign={{md: "right", xs: "center"}} my={5} fontWeight={200}>
+				<Grid container justify="space-between">
+					<Grid item xs={12} sm={"auto"} md={"auto"}>
+						<Grid container spacing={2} justify="center">
+							<Hidden only="xs">
+								<Grid item>
+									<Link href="#header">
+										<img alt="logo" src={logo} width="100%" />
+									</Link>
+								</Grid>
+							</Hidden>
+							<Grid item>
+								<SocialButton variant="contained" target="_blank" href="https://fb.com/codepillow" color="primary" disableElevation>
+									<FacebookIcon />
+								</SocialButton>
+							</Grid>
+							<Grid item>
+								<SocialButton variant="contained" target="_blank" href="https://linkedin.com/company/codepillow" color="primary" disableElevation>
+									<LinkedInIcon />
+								</SocialButton>
+							</Grid>
+							<Grid item>
+								<SocialButton variant="contained" target="_blank" href="https://t.me/codepillow" color="primary" disableElevation>
+									<TelegramIcon />
+								</SocialButton>
+							</Grid>
+							<Grid item>
+								<SocialButton variant="contained" target="_blank" href="https://twitter.com/codepillow" color="primary" disableElevation>
+									<TwitterIcon />
+								</SocialButton>
+							</Grid>
+							<Hidden smDown>
+								<Grid item>
+									<div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="1" data-height="50" data-clutchcompany-id="1229792"></div>
+								</Grid>
+							</Hidden>
+						</Grid>
+					</Grid>
+					<Grid item xs={12} sm={"auto"} md={"auto"}>
+						<Button onClick={handleClickOpen('paper')} color="primary">Privacy policy</Button>
+					</Grid>
+				</Grid>
+			</Box>
 
-		<Dialog open={open} onClose={handleClose} scroll={scroll} aria-labelledby="scroll-dialog-title" aria-describedby="scroll-dialog-description">
-        	<DialogTitle id="scroll-dialog-title">Privacy Policy</DialogTitle>
-    		<DialogContent dividers={scroll === 'paper'}>
-    			<DialogContentText id="scroll-dialog-description" ref={descriptionElementRef} tabIndex={-1}>
-      				<PrivacyText />
-      			</DialogContentText>
-    		</DialogContent>
-        	<DialogActions>
-      			<Button onClick={handleClose} color="primary">
-            		Cancel
-          		</Button>
-        	</DialogActions>
-      	</Dialog>
+			<Dialog open={open} onClose={handleClose} scroll={"paper"} aria-labelledby="scroll-dialog-title" aria-describedby="scroll-dialog-description">
+				<DialogTitle id="scroll-dialog-title">Privacy Policy</DialogTitle>
+				<DialogContent dividers={"paper"}>
+					<DialogContentText id="scroll-dialog-description" ref={descriptionElementRef} tabIndex={-1}>
+						<PrivacyText />
+					</DialogContentText>
+				</DialogContent>
+				<DialogActions>
+					<Button onClick={handleClose} color="primary">
+						Cancel
+					</Button>
+				</DialogActions>
+			</Dialog>
 
-    </Container>
-  );
+		</Container>
+	);
 }
 
 export { Footer };
