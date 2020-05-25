@@ -10,15 +10,9 @@ import Box from '@material-ui/core/Box';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import CodeIcon from '@material-ui/icons/Code';
-import TouchAppIcon from '@material-ui/icons/TouchApp';
-import BrushIcon from '@material-ui/icons/Brush';
 import headerImg from '../../../data/header.svg';
 import first from '../../../data/backs/1.svg';
 import second from '../../../data/backs/2.svg';
-
-import {Svg} from '../../components';
-import {ReactComponent as First} from '../../../data/backs/1.svg';
 
 const useStyles = makeStyles((theme) => ({
   shape: {
@@ -49,13 +43,13 @@ const Header = () => {
 
 	return (
 		<ScrollableAnchor id="header">
-			<ScrollAnimation animateIn="fadeIn" animateOnce="true">
+			<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
 				<Box height="100vh" pt={6} display="flex" justify="center">
 					<Parallax y={[50, -50]} styleInner={firstStyle}>
-						<img src={first} className={classes.shape} />
+						<img alt="first" src={first} className={classes.shape} />
 					</Parallax>
 					<Parallax y={[100, 0]} styleInner={secondStyle} >
-						<img src={second} className={classes.shape} />
+						<img alt="second" src={second} className={classes.shape} />
 					</Parallax>
 					<Grid container alignItems="center" justify="center" spacing={2}>
 
@@ -71,7 +65,7 @@ const Header = () => {
 							</Button>
 						</Grid>
 						<Grid item md={6} xs={12} sm={8}>
-							<img src={headerImg} width="100%" />
+							<img alt="headerImg" src={headerImg} width="100%" />
 						</Grid>
 					</Grid>
 				</Box>

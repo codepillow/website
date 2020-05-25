@@ -1,10 +1,8 @@
 import React, {useState} from "react";
-import { goToTop, goToAnchor } from 'react-scrollable-anchor'
+import { goToAnchor } from 'react-scrollable-anchor'
 
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import Box from '@material-ui/core/Box';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Hidden from '@material-ui/core/Hidden';
@@ -69,14 +67,14 @@ const Nav = (props) => {
 
     return (
         <HideOnScroll {...props}>
-            <AppBar color="transparent" elevation={0}>
+            <AppBar color="inherit" elevation={0}>
                 <Container>
                     <Toolbar>
                         <Hidden smDown>
                             <Grid container alignItems="center">
                                 <Grid item>
                                     <a href="#header">
-                                        <img src={logo} width="100%" />
+                                        <img alt="logo" src={logo} width="100%" />
                                     </a>
                                 </Grid>
                                 <Grid item md align="right">
@@ -102,7 +100,7 @@ const Nav = (props) => {
                             <Grid container alignItems="center">
                                 <Grid item>
                                     <a href="#header">
-                                        <img src={logo} width="100%" />
+                                        <img alt="logo" src={logo} width="100%" />
                                     </a>
                                 </Grid>
                                 <Grid item sm xs align="right">

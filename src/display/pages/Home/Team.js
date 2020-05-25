@@ -23,8 +23,8 @@ const Team = () => {
 	                </Typography>
 				</Grid>
 	            <Grid item xs={12} md={4} sm={4}>
-					<ScrollAnimation animateIn="fadeIn" animateOnce="true">
-						<img src={volbil} height="200"/>
+					<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+						<img alt="volbil" src={volbil} height="200"/>
 						<Typography variant="h5" align="center" component="h3" gutterBottom>
 		                    Volodymyr Biloshytskyi
 						</Typography>
@@ -34,8 +34,8 @@ const Team = () => {
 					</ScrollAnimation>
 				</Grid>
 	            <Grid item xs={12} md={4} sm={4}>
-					<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={200}>
-						<img src={olexb} height="200"/>
+					<ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={200}>
+						<img alt="olexb" src={olexb} height="200"/>
 						<Typography variant="h5" align="center" component="h3" gutterBottom>
 							Oleh Basystiuk
 						</Typography>
@@ -45,8 +45,8 @@ const Team = () => {
 					</ScrollAnimation>
 				</Grid>
 	            <Grid item xs={12} md={4} sm={4}>
-					<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={250}>
-						<img src={olexh} height="200"/>
+					<ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={250}>
+						<img alt="olexh" src={olexh} height="200"/>
 						<Typography variant="h5" align="center" component="h3" gutterBottom>
 							Oleh Nykoliak
 						</Typography>

@@ -1,12 +1,10 @@
-import PropTypes from "prop-types";
-import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from 'react-redux';
+import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import {
 	Home,
 	ErrorComponent,
 } from "../pages";
-import { Header, Footer, Drawer } from "../components";
+import { Footer } from "../components";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './theme';

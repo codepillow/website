@@ -24,7 +24,7 @@ const Benefits = () => {
 				</Grid>
 				<Grid container align="center" alignItems="center">
 					<Grid item md={2} sm={4} xs={12}>
-						<ScrollAnimation animateIn="fadeIn" animateOnce="true">
+						<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
 							<BrushIcon color="primary" fontSize="large" />
 							<Typography variant="h5" align="center" component="h3" gutterBottom>
 							  	Solid Design
@@ -35,12 +35,12 @@ const Benefits = () => {
 						</ScrollAnimation>
 					</Grid>
 					<Hidden smDown>
-						<Grid item md={3} justify="center">
-							<img src={arrow} />
+						<Grid item md={3}>
+							<img alt="arrow" src={arrow} />
 						</Grid>
 					</Hidden>
 					<Grid item md={2} sm={4} xs={12}>
-						<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={200}>
+						<ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={200}>
 							<TouchAppIcon color="primary" fontSize="large" />
 							<Typography variant="h5" align="center" component="h3" gutterBottom>
 								Usability
@@ -52,11 +52,11 @@ const Benefits = () => {
 					</Grid>
 					<Hidden smDown>
 						<Grid item md={3}>
-							<img src={arrow} style={{transform: 'scaleY(-1)'}} />
+							<img alt="arrow" src={arrow} style={{transform: 'scaleY(-1)'}} />
 						</Grid>
 					</Hidden>
 					<Grid item md={2} sm={4} xs={12}>
-					<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={250}>
+					<ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={250}>
 							<CodeIcon color="primary" fontSize="large" />
 							<Typography variant="h5" align="center" component="h3" gutterBottom>
 								Engineering

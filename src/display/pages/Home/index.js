@@ -1,11 +1,7 @@
-import PropTypes from "prop-types";
 import { configureAnchors } from 'react-scrollable-anchor';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useEffect } from "react";
 import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
 
 import Nav from "./Nav";
 import Header from "./Header";

@@ -6,7 +6,6 @@ import { Parallax } from 'react-scroll-parallax';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Grid from '@material-ui/core/Grid';
-import Hidden from '@material-ui/core/Hidden';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
@@ -37,7 +36,7 @@ const Clients = () => {
 		<ScrollableAnchor id={'clients'}>
 		<Box my={12}>
 			<Parallax y={[50, -50]} styleInner={fourthStyle}>
-				<img src={fourth} className={classes.shape} />
+				<img alt="fourth" src={fourth} className={classes.shape} />
 			</Parallax>
 			<Grid container spacing={4} style={{marginTop: 10}} align="center">
 				<Grid item md={12}>
@@ -51,23 +50,23 @@ const Clients = () => {
 			</Grid>
 			<Grid container spacing={2} align="center">
 	            <Grid item xs={12} md={3} sm={6}>
-	            	<ScrollAnimation animateIn="fadeIn" animateOnce="true">
-						<img src={glovo} height="80"/>
+	            	<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+						<img alt="glovo" src={glovo} height="80"/>
 					</ScrollAnimation>
 				</Grid>
 	            <Grid item xs={12} md={3} sm={6}>
-		            <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={200}>
-						<img src={binance}  height="36"/>
+		            <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={200}>
+						<img alt="binance" src={binance}  height="36"/>
 					</ScrollAnimation>
 				</Grid>
 	            <Grid item xs={12} md={3} sm={6}>
-		            <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={250}>
-						<img src={uber}  height="30"/>
+		            <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={250}>
+						<img alt="uber" src={uber}  height="30"/>
 					</ScrollAnimation>
 				</Grid>
                 <Grid item xs={12} md={3} sm={6}>
-                	<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={300}>
-						<img src={starbucks}  height="50"/>
+                	<ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
+						<img alt="starbucks" src={starbucks}  height="50"/>
 					</ScrollAnimation>
     			</Grid>
 			</Grid>

@@ -3,7 +3,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 import Grid from '@material-ui/core/Grid';
-import Hidden from '@material-ui/core/Hidden';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Project from '../../components/Project';
@@ -82,7 +81,7 @@ const Fields = () => {
 	return (
 		<ScrollableAnchor id={'fields'}>
 			<Box my={12}>
-				<ScrollAnimation animateIn="fadeIn" animateOnce="true" delay="200">
+				<ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={200}>
 					<Grid container spacing={2} style={{marginTop: 10}} align="center">
 						<Grid item md={12}>
 							<Typography variant="h3" align="center" component="h2" gutterBottom>
@@ -96,7 +95,7 @@ const Fields = () => {
 						<Grid item xs={12} md={12} align="center">
 							{
 								defaultFields.map((field, index) => {
-									return <FieldButton small variant={activeField == index ? "contained" : "text"} color="primary" disableElevation onClick={() => setActiveField(index)}>
+									return <FieldButton key={index} size="small" variant={activeField === index ? "contained" : "text"} color="primary" disableElevation onClick={() => setActiveField(index)}>
 												{field.button}
 											</FieldButton>
 								})

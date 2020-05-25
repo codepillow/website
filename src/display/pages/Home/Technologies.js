@@ -40,7 +40,7 @@ const Technologies = () => {
 		<ScrollableAnchor id={'technologies'}>
 			<Box my={12}>
 				<Parallax y={[150, 0]} styleInner={thirdStyle}>
-					<img src={third} className={classes.shape} />
+					<img alt="third" src={third} className={classes.shape} />
 				</Parallax>
 				<Grid container spacing={4} style={{marginTop: 10}} align="center">
 					<Grid item md={12}>
@@ -52,44 +52,44 @@ const Technologies = () => {
 		                </Typography>
 					</Grid>
 		            <Grid item xs={4} md={2}>
-                        <ScrollAnimation animateIn="fadeIn" animateOnce="true">
+                        <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                             <Tooltip title="React" placement="top">
-    						    <img src={react} height="70"/>
+    						    <img alt="react" src={react} height="70"/>
                             </Tooltip>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
-                        <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={200}>
+                        <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={200}>
                             <Tooltip title="Redux" placement="top">
-        						<img src={redux} height="60"/>
+        						<img alt="redux" src={redux} height="60"/>
                             </Tooltip>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
-                        <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={250}>
+                        <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={250}>
                             <Tooltip title="Swift" placement="top">
-        						<img src={swift} height="60"/>
+        						<img alt="swift" src={swift} height="60"/>
                             </Tooltip>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
-                        <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={300}>
+                        <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
                             <Tooltip title="Kotlin" placement="top">
-        						<img src={kotlin} height="60"/>
+        						<img alt="kotlin" src={kotlin} height="60"/>
                             </Tooltip>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
-                        <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={350}>
+                        <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={350}>
                             <Tooltip title="Laravel" placement="top">
-                                <img src={laravel} height="60"/>
+                                <img alt="laravel" src={laravel} height="60"/>
                             </Tooltip>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
-                        <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={400}>
+                        <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={400}>
                             <Tooltip title="Angular" placement="top">
-        						<img src={angular} height="60"/>
+        						<img alt="angular" src={angular} height="60"/>
                             </Tooltip>
                         </ScrollAnimation>
 					</Grid>
