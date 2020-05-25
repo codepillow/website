@@ -2,6 +2,7 @@ import React from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
 import ScrollableAnchor from 'react-scrollable-anchor'
 import Tooltip from '@material-ui/core/Tooltip';
+import { Parallax } from 'react-scroll-parallax';
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -20,7 +21,6 @@ import third from '../../../data/backs/3.svg';
 
 const useStyles = makeStyles((theme) => ({
   shape: {
-  	position: "absolute",
   	zIndex: "-1",
     [theme.breakpoints.down('md')]: {
       opacity: "0.4"
@@ -32,14 +32,16 @@ const Technologies = () => {
 	const classes = useStyles();
 
 	const thirdStyle = {
-		content: `url(${third})`,
+		position: "absolute",
 		left: 0
 	}
 
 	return (
 		<ScrollableAnchor id={'technologies'}>
 			<Box my={12}>
-				<span style={thirdStyle} className={classes.shape} />
+				<Parallax y={[150, 0]} styleInner={thirdStyle}>
+					<img src={third} className={classes.shape} />
+				</Parallax>
 				<Grid container spacing={4} style={{marginTop: 10}} align="center">
 					<Grid item md={12}>
 						<Typography variant="h3" align="center" component="h2" gutterBottom>

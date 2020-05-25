@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
-import { configureAnchors } from 'react-scrollable-anchor'
+import { configureAnchors } from 'react-scrollable-anchor';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
@@ -21,16 +22,18 @@ const Home = () => {
 	})
 
   	return (
-		<Container>
-			<Nav />
-			<Header />
-			<Benefits />
-			<Clients />
-			<Technologies />
-			<Fields />
-			<Team />
-            <ContactUs />
-		</Container>
+  		<ParallaxProvider>
+			<Container>
+				<Nav />
+				<Header />
+				<Benefits />
+				<Clients />
+				<Technologies />
+				<Fields />
+				<Team />
+	            <ContactUs />
+			</Container>
+		</ParallaxProvider>
   	);
 }
 

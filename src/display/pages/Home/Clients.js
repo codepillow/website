@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
 import ScrollableAnchor from 'react-scrollable-anchor'
+import { Parallax } from 'react-scroll-parallax';
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -17,7 +18,6 @@ import fourth from '../../../data/backs/4.svg';
 
 const useStyles = makeStyles((theme) => ({
   shape: {
-  	position: "absolute",
   	zIndex: "-1",
     [theme.breakpoints.down('md')]: {
       opacity: "0.4"
@@ -29,14 +29,16 @@ const Clients = () => {
 	const classes = useStyles();
 
 	const fourthStyle = {
-		content: `url(${fourth})`,
+		position: "absolute",
 		right: 0
 	}
 
 	return (
 		<ScrollableAnchor id={'clients'}>
 		<Box my={12}>
-			<span style={fourthStyle} className={classes.shape} />
+			<Parallax y={[50, -50]} styleInner={fourthStyle}>
+				<img src={fourth} className={classes.shape} />
+			</Parallax>
 			<Grid container spacing={4} style={{marginTop: 10}} align="center">
 				<Grid item md={12}>
 					<Typography variant="h3" align="center" component="h2" gutterBottom>
