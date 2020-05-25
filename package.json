@@ -1,6 +1,7 @@
 {
   "name": "codepillow-react",
   "version": "1.0.0",
+  "homepage": "https://codepillow.io",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.0",
@@ -12,6 +13,7 @@
     "animate.css": "^4.1.0",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
+    "gh-pages": "^2.2.0",
     "messaging-api-telegram": "^0.8.2",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
@@ -35,7 +37,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
