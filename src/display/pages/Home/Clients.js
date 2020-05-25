@@ -38,7 +38,7 @@ const Clients = () => {
 			<Parallax y={[50, -50]} styleInner={fourthStyle}>
 				<img alt="fourth" src={fourth} className={classes.shape} />
 			</Parallax>
-			<Grid container spacing={2} style={{marginTop: 10}} align="center">
+			<Grid container spacing={2} style={{marginTop: 10}} align="center" alignItems="center">
 				<Grid item md={12}>
 					<Typography variant="h3" align="center" component="h2" gutterBottom>
 						Clients we work with
