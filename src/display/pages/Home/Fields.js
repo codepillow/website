@@ -8,6 +8,11 @@ import Button from '@material-ui/core/Button';
 import Project from '../../components/Project';
 import Box from '@material-ui/core/Box';
 
+import karbonara from "../../../data/karbonara-artboard.jpg"
+import microbitcoin from "../../../data/microbitcoin-artboard.jpg"
+import sugarchain from "../../../data/sugarchain-artboard.jpg"
+import harry from "../../../data/harry-artboard.jpg"
+
 import { withStyles } from '@material-ui/core/styles';
 
 
@@ -40,7 +45,7 @@ const Fields = () => {
 			header: "Frontend & Backend development",
 			description: "Web development was an initial branch of our team. We've created lots of big and cool projects. Take a look at them in detail.",
 			project: {
-				poster: "https://www.free-mockup.com/wp-content/uploads/edd/2020/02/isometric-surface-laptop-3-free-mockup-1000x750.jpg",
+				poster: karbonara,
 				title: "Karbonara – Online Marketplace",
 				description: "Online marketplace, where you can sell goods and services using cryptocurrency called Karbo."
 			}
@@ -50,7 +55,7 @@ const Fields = () => {
 			header: "Mobile applications",
 			description: "We've huge expertise in mobile application development. Research our stages of the development process and check the best case studies we've done.",
 			project: {
-				poster: "https://www.free-mockup.com/wp-content/uploads/edd/2020/03/Free-Responsive-Website-Mockup-01.jpg",
+				poster: microbitcoin,
 				title: "MicroBitcoin – Payment Protocol",
 				description: "Payments protocol built on blockchain technology, with decentralization and peer-to-peer payments."
 			}
@@ -60,7 +65,7 @@ const Fields = () => {
 			header: "Blockchain technologies",
 			description: "Our passion for a few last years was the Blockchain industry. We've created coins, tokens, and all kinds of infrastructure for kicking out new crypto solutions.",
 			project: {
-				poster: "https://www.free-mockup.com/wp-content/uploads/edd/2020/02/apple-imac-pro-front-view-mockup-1000x750.jpg",
+				poster: sugarchain,
 				title: "AOK - Blockchain-based Platform",
 				description: "Secure Proof-of-Stake Blockchain technology that reorganizes the world distribution industry."
 			}
@@ -70,8 +75,8 @@ const Fields = () => {
 			header: "Artificial Intelligence development",
 			description: "Technologies of the future begins growth nowadays. We provide our AI expertise to varieties of startups and prospective research projects.",
 			project: {
-				poster: "https://www.free-mockup.com/wp-content/uploads/edd/2020/02/macbook-pro-workspace-mockup-1000x750.jpg",
-				title: "Harry Bot - Speech-to-Text Assistant",
+				poster: harry,
+				title: "Harry Bot - Speech-to-Text Bot",
 				description: "Bot translates the voice messages into text in popular messengers. Participator of Y Combinator Startup School Batch."
 			}
 		},
