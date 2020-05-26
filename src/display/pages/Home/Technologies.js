@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
 import ScrollableAnchor from 'react-scrollable-anchor'
+import Link from '@material-ui/core/Link';
 import Tooltip from '@material-ui/core/Tooltip';
 import { Parallax } from 'react-scroll-parallax';
 
@@ -8,6 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+// eslint-disable-next-line
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 
@@ -53,44 +55,56 @@ const Technologies = () => {
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-                            <Tooltip title="React" placement="top">
-    						    <img alt="react" src={react} height="70"/>
-                            </Tooltip>
+                            <Link href="https://reactnative.dev/" target="_blank">
+                                <Tooltip title="React" placement="top">
+        						    <img alt="react" src={react} height="70"/>
+                                </Tooltip>
+                            </Link>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={200}>
-                            <Tooltip title="Redux" placement="top">
-        						<img alt="redux" src={redux} height="60"/>
-                            </Tooltip>
+                            <Link href="https://redux.js.org/" target="_blank">
+                                <Tooltip title="Redux" placement="top">
+            						<img alt="redux" src={redux} height="60"/>
+                                </Tooltip>
+                            </Link>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={250}>
-                            <Tooltip title="Tensorflow" placement="top">
-        						<img alt="tensorflow" src={tensorflow} height="60"/>
-                            </Tooltip>
+                            <Link href="https://www.tensorflow.org/" target="_blank">
+                                <Tooltip title="Tensorflow" placement="top">
+            						<img alt="tensorflow" src={tensorflow} height="60"/>
+                                </Tooltip>
+                            </Link>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
-                            <Tooltip title="Bitcoin" placement="top">
-        						<img alt="bitcoin" src={bitcoin} height="60"/>
-                            </Tooltip>
+                            <Link href="https://bitcoin.org/" target="_blank">
+                                <Tooltip title="Bitcoin" placement="top">
+            						<img alt="bitcoin" src={bitcoin} height="60"/>
+                                </Tooltip>
+                            </Link>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={350}>
-                            <Tooltip title="Laravel" placement="top">
-                                <img alt="laravel" src={laravel} height="60"/>
-                            </Tooltip>
+                            <Link href="https://laravel.com/" target="_blank">
+                                <Tooltip title="Laravel" placement="top">
+                                    <img alt="laravel" src={laravel} height="60"/>
+                                </Tooltip>
+                            </Link>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={400}>
-                            <Tooltip title="Flask" placement="top">
-        						<img alt="flask" src={flask} height="60"/>
-                            </Tooltip>
+                            <Link href="https://palletsprojects.com/p/flask/" target="_blank">
+                                <Tooltip title="Flask" placement="top">
+            						<img alt="flask" src={flask} height="60"/>
+                                </Tooltip>
+                            </Link>
                         </ScrollAnimation>
 					</Grid>
 				</Grid>

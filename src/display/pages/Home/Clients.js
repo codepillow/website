@@ -1,8 +1,8 @@
 import React from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
 import ScrollableAnchor from 'react-scrollable-anchor'
-import Tooltip from '@material-ui/core/Tooltip';
 import Link from '@material-ui/core/Link';
+import Tooltip from '@material-ui/core/Tooltip';
 import { Parallax } from 'react-scroll-parallax';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -49,38 +49,38 @@ const Clients = () => {
                         We work with companies that need a reliable partner in the software development field. We dive into their business process to provide them the best solutions.
                     </Typography>
 				</Grid>
-	            <Grid item xs={12} md={3} sm={6}>
+	            <Grid item xs={6} md={3} sm={6}>
 	            	<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                         <Link href="https://alphacon.io" target="_blank">
-                            <Tooltip title="AOK" placement="top">
-        						<img alt="alphacon" src={alphacon} height="70"/>
+                            <Tooltip title="Alphacon" placement="top">
+        						<img alt="alphacon" src={alphacon} width="50%"/>
                             </Tooltip>
                         </Link>
 					</ScrollAnimation>
 				</Grid>
-	            <Grid item xs={12} md={3} sm={6}>
+	            <Grid item xs={6} md={3} sm={6}>
 		            <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={200}>
                         <Link href="https://aok.network" target="_blank">
                             <Tooltip title="AOK" placement="top">
-        						<img alt="aok" src={aok}  height="70"/>
+        						<img alt="aok" src={aok}  width="50%"/>
                             </Tooltip>
                         </Link>
 					</ScrollAnimation>
 				</Grid>
-	            <Grid item xs={12} md={3} sm={6}>
+	            <Grid item xs={6} md={3} sm={6}>
 		            <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={250}>
                         <Link href="https://microbitcoin.org/" target="_blank">
                             <Tooltip title="MicroBitcoin" placement="top">
-        						<img alt="microbitcoin" src={microbitcoin}  height="70"/>
+        						<img alt="microbitcoin" src={microbitcoin}  width="50%"/>
                             </Tooltip>
                         </Link>
 					</ScrollAnimation>
 				</Grid>
-                <Grid item xs={12} md={3} sm={6}>
+                <Grid item xs={6} md={3} sm={6}>
                 	<ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
                         <Link href="https://sugarchain.org/" target="_blank">
                             <Tooltip title="Sugarchain" placement="top">
-        						<img alt="sugarchain" src={sugarchain}  height="70"/>
+        						<img alt="sugarchain" src={sugarchain} width="50%"/>
                             </Tooltip>
                         </Link>
 					</ScrollAnimation>
