@@ -13,10 +13,10 @@ import Box from '@material-ui/core/Box';
 
 import react from '../../../data/react.svg';
 import redux from '../../../data/redux.svg';
-import swift from '../../../data/swift.svg';
-import kotlin from '../../../data/kotlin.svg';
+import tensorflow from '../../../data/tensorflow.svg';
+import bitcoin from '../../../data/bitcoin.svg';
 import laravel from '../../../data/laravel.svg';
-import angular from '../../../data/angular.svg';
+import flask from '../../../data/flask.svg';
 import third from '../../../data/backs/3.svg';
 
 const useStyles = makeStyles((theme) => ({
@@ -67,15 +67,15 @@ const Technologies = () => {
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={250}>
-                            <Tooltip title="Swift" placement="top">
-        						<img alt="swift" src={swift} height="60"/>
+                            <Tooltip title="Tensorflow" placement="top">
+        						<img alt="tensorflow" src={tensorflow} height="60"/>
                             </Tooltip>
                         </ScrollAnimation>
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
-                            <Tooltip title="Kotlin" placement="top">
-        						<img alt="kotlin" src={kotlin} height="60"/>
+                            <Tooltip title="Bitcoin" placement="top">
+        						<img alt="bitcoin" src={bitcoin} height="60"/>
                             </Tooltip>
                         </ScrollAnimation>
 					</Grid>
@@ -88,16 +88,11 @@ const Technologies = () => {
 					</Grid>
 		            <Grid item xs={4} md={2}>
                         <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={400}>
-                            <Tooltip title="Angular" placement="top">
-        						<img alt="angular" src={angular} height="60"/>
+                            <Tooltip title="Flask" placement="top">
+        						<img alt="flask" src={flask} height="60"/>
                             </Tooltip>
                         </ScrollAnimation>
 					</Grid>
-		            <Grid item xs>
-		                <Button variant="outlined" color="primary">
-		                    See more
-		                </Button>
-		            </Grid>
 				</Grid>
 			</Box>
 		</ScrollableAnchor>
