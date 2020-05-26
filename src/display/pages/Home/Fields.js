@@ -10,7 +10,7 @@ import Box from '@material-ui/core/Box';
 
 import karbonara from "../../../data/karbonara-artboard.jpg"
 import microbitcoin from "../../../data/microbitcoin-artboard.jpg"
-import sugarchain from "../../../data/sugarchain-artboard.jpg"
+import aok from "../../../data/aok-artboard.png"
 import harry from "../../../data/harry-artboard.jpg"
 
 import { withStyles } from '@material-ui/core/styles';
@@ -55,9 +55,9 @@ const Fields = () => {
 			header: "Mobile applications",
 			description: "We've huge expertise in mobile application development. Research our stages of the development process and check the best case studies we've done.",
 			project: {
-				poster: microbitcoin,
-				title: "MicroBitcoin – Payment Protocol",
-				description: "Payments protocol built on blockchain technology, with decentralization and peer-to-peer payments."
+				poster: aok,
+				title: "AOK - Blockchain-based Platform",
+				description: "Secure Proof-of-Stake Blockchain technology that reorganizes the world distribution industry."
 			}
 		},
 		{
@@ -65,9 +65,9 @@ const Fields = () => {
 			header: "Blockchain technologies",
 			description: "Our passion for a few last years was the Blockchain industry. We've created coins, tokens, and all kinds of infrastructure for kicking out new crypto solutions.",
 			project: {
-				poster: sugarchain,
-				title: "AOK - Blockchain-based Platform",
-				description: "Secure Proof-of-Stake Blockchain technology that reorganizes the world distribution industry."
+				poster: microbitcoin,
+				title: "MicroBitcoin – Payment Protocol",
+				description: "Payments protocol built on blockchain technology, with decentralization and peer-to-peer payments."
 			}
 		},
 		{
@@ -113,7 +113,7 @@ const Fields = () => {
 							<Typography variant="subtitle1" component="p" gutterBottom>
 								{defaultFields[activeField].description}
 							</Typography>
-							<Button variant="contained" color="primary" disableElevation>
+							<Button disabled variant="contained" color="primary" disableElevation>
 								Find more
 							</Button>
 						</Grid>

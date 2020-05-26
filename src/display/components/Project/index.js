@@ -21,7 +21,7 @@ const Project = ({data}) => {
 	const classes = useStyles();
 
 	return (
-		<Paper elevation={0} className={classes.root} style={{backgroundImage: `url(${data.poster})`}}>
+		<Paper elevation={0} className={classes.root} style={{backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.20)), url(${data.poster})`}}>
 			<Typography variant="h3" component="h2" gutterBottom>
 				{data.title}
 			</Typography>
