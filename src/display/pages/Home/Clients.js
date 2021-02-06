@@ -11,8 +11,8 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
-import alphacon from '../../../data/alphacon.png';
 import aok from '../../../data/aok.png';
+import rapids from '../../../data/rapids.png';
 import microbitcoin from '../../../data/microbitcoin.png';
 import sugarchain from '../../../data/sugarchain.svg';
 import fourth from '../../../data/backs/4.svg';
@@ -50,19 +50,19 @@ const Clients = () => {
                     </Typography>
 				</Grid>
 	            <Grid item xs={6} md={3} sm={6}>
-	            	<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-                        <Link href="https://alphacon.io" target="_blank">
-                            <Tooltip title="Alphacon" placement="top">
-        						<img alt="alphacon" src={alphacon} width="50%"/>
-                            </Tooltip>
-                        </Link>
-					</ScrollAnimation>
-				</Grid>
-	            <Grid item xs={6} md={3} sm={6}>
 		            <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={200}>
                         <Link href="https://aok.network" target="_blank">
                             <Tooltip title="AOK" placement="top">
         						<img alt="aok" src={aok}  width="50%"/>
+                            </Tooltip>
+                        </Link>
+					</ScrollAnimation>
+				</Grid>
+                <Grid item xs={6} md={3} sm={6}>
+	            	<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+                        <Link href="https://rapidsnetwork.io" target="_blank">
+                            <Tooltip title="Rapids" placement="top">
+        						<img alt="rapids" src={rapids} width="50%"/>
                             </Tooltip>
                         </Link>
 					</ScrollAnimation>

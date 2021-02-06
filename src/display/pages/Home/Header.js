@@ -55,10 +55,10 @@ const Header = () => {
 
 						<Grid item md={6} xs={12} sm={12}>
 							<Typography variant="h2" component="h1">
-								We turn you ideas into <span style={styles.highlighter}>beautiful</span> products
+								We turn your ideas into <span style={styles.highlighter}>beautiful</span> products
 							</Typography>
 							<Typography variant="subtitle1" component="p" gutterBottom>
-								And we dream of collaborating with you!
+                                And we are ready to collaborate with you!
 							</Typography>
 							<Button variant="contained" href="#contact" color="primary" disableElevation style={{marginTop: 25}}>
 								Start out
